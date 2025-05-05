@@ -2,7 +2,7 @@ name: coinex-fee-check
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
 jobs:
   run:
     runs-on: ubuntu-latest
