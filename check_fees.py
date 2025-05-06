@@ -2,7 +2,7 @@ import os, json, requests
 
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 CHAT_ID   = "252561990"
-LIMITS = {"ERC20": 1.0, "TRC20": 1.0}
+LIMITS = {"ERC20": 4.0, "TRC20": 4.0}
 
 url = "https://api.coinex.com/v2/assets/deposit-withdraw-config?ccy=USDT"
 chains = requests.get(url, timeout=55).json()["data"]["chains"]
